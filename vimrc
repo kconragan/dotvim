@@ -24,8 +24,8 @@ Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 " vimrc *******************************************************************
 
-map <leader>e :e! ~/.vimrc<cr>              " Fast editing of the vimrc
-autocmd! bufwritepost vimrc source ~/.vimrc " Reload vimrc when saved 
+map <leader>e :e! ~/.vim/vimrc<cr>             " Fast editing of the vimrc
+autocmd! bufwritepost vimrc source ~/vim/vimrc " Reload vimrc when saved 
 
 " Visuals *****************************************************************
 
