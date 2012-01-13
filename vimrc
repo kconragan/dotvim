@@ -10,14 +10,17 @@ let mapleader = ","
 
 " Vundle Settings *********************************************************
 
-set nocompatible " Required setting when using Vundle
+filetype off     " Automatically choose filetype
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " Let Vundle manage itself
 Bundle 'gmarik/vundle'
 
-Bundle 'vim-scripts/hexHighlight.vim'
+" Github repositories
+Bundle 'vim-scripts/hexHighlight'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 " vimrc *******************************************************************
 
@@ -25,6 +28,8 @@ map <leader>e :e! ~/.vimrc<cr>              " Fast editing of the vimrc
 autocmd! bufwritepost vimrc source ~/.vimrc " Reload vimrc when saved 
 
 " Visuals *****************************************************************
+
+set guifont=DroidSansMonoSlashed:h13
 
 set title           " Set window title
 set scrolloff=5     " Number of lines visible above/below cursor
@@ -37,7 +42,6 @@ set shortmess=atI   " Abbreviate status messages
 set cmdheight=2     " The commandbar height
 set showmatch       " Show matching brackets/parenthesis
 
-"set guifont=DroidSansMonoDotted:h13
 
 " Messaging & Sound *******************************************************
 set shortmess=asToOWAI
@@ -47,7 +51,6 @@ set visualbell " Turn off audible bell
 
 " Basic Syntax & Filetype Behavior *************************************** 
 syntax on          " Enable syntax highlighting
-filetype on        " Automatically choose filetype
 filetype plugin on " Load plugins based on filetype
 filetype indent on " Follow filetype indent rules
 
