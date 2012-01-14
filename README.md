@@ -8,11 +8,15 @@ This is a Vim configuration for a web-development orientated workflow. Specifica
 
 This configuration relies on a few critical pieces:
 
-  - **Vundle**
+  - **Vundle**  
+    The most magical bundle manager in the world.  
+    See https://github.com/gmarik/vundle
   - **PeepOpen**  
-    (only applies when in a GUI)
+    A file navigation application that works with with not only Vim, but Textmate and others as well. Provides fuzzy search, so you can identify files by typing names, paths, and other metadata.  
+    See http://peepcode.com/products/peepopen
   - **DroidSansMono**  
-    I use a custom version that adds slashes to '0' for disambiguation
+    A wonderful coding font. I use a custom version that adds slashes to zeroes to help distinguish them from non-numeric characters.  
+    See http://www.cosmix.org/software/
 
 ## Installation
 
