@@ -9,9 +9,9 @@ This is a Vim configuration for a web-development orientated workflow. Specifica
 This configuration relies on a few critical pieces:
 
   - **Vundle**
-  - **PeepOpen**
+  - **PeepOpen**  
     (only applies when in a GUI)
-  - **DroidSansMono**
+  - **DroidSansMono**  
     I use a custom version that adds slashes to '0' for disambiguation
 
 ## Installation
