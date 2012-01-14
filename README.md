@@ -9,7 +9,7 @@ This is a Vim configuration for a web-development orientated workflow. Specifica
 This configuration relies on a few critical pieces:
 
   - **Solarized**  
-    The most thoughtful color scheme I've ever seen. I used to obsess over color schemes, but now I just use this one default, thanks to the wonderful work Ethan Schoonover. Highlights include sixteeen color palette designed for use with terminal and gui apps, CIELAB lightens relationships, and both dark and light theme options.
+    The most thoughtful color scheme I've ever seen. I used to obsess over color schemes, but now I just use this one by default, thanks to the wonderful work of Ethan Schoonover. Highlights include sixteeen color palette designed for use with terminal and gui apps, CIELAB lightness relationships, and both dark and light theme options.
     See http://ethanschoonover.com/solarized
   - **Vundle**  
     The most magical bundle manager in the world.  
