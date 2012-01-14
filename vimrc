@@ -18,6 +18,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Github repositories
+Bundle 'altercation/vim-colors-solarized'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
@@ -41,6 +42,13 @@ autocmd! bufwritepost vimrc source ~/.vim/vimrc " Reload vimrc when saved
 
 " Visuals *****************************************************************
 
+colorscheme solarized
+if has('gui_running')
+  set background=light
+else
+  set background=dark
+endif
+call togglebg#map("<F5>") " Easily toggle between light/dark
 set guifont=DroidSansMonoSlashed:h13
 
 set title           " Set window title
