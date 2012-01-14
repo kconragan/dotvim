@@ -59,10 +59,6 @@ syntax on          " Enable syntax highlighting
 filetype plugin on " Load plugins based on filetype
 filetype indent on " Follow filetype indent rules
 
- "Set softwrap for text files"
-autocmd FileType text setlocal wrap linebreak textwidth=0
-autocmd FileType markdown setlocal wrap linebreak textwidth=0
-
 " Highlight unwanted characters
 set listchars=tab:>-,trail:·,eol:$ 
 nmap <silent> <leader>s :set nolist!<CR>
@@ -144,6 +140,10 @@ au BufRead,BufNewFile *.sjs setfiletype javascript
 au BufRead,BufNewFile *.controller setfiletype javascript
 au BufRead,BufNewFile *.ajax set ft javascript
 au! BufRead,BufNewFile *.json set filetype=json foldmethod=syntax
+"
+"Set softwrap for text files"
+autocmd FileType text setlocal wrap linebreak textwidth=0
+autocmd FileType markdown setlocal wrap linebreak textwidth=0
 
 " Omni Completion ********************************************************
 autocmd FileType html :set omnifunc=htmlcomplete#CompleteTags

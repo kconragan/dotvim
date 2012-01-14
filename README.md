@@ -6,6 +6,13 @@ a .vim configuration by kai.conragan@gmail.com
 
 This is a Vim configuration for a web-development orientated workflow. Specifically, if you spend most of your time writing HTML, CSS, and JavaScript, you might be able to find something useful here.
 
+This configuration relies on a few critical pieces:
+
+  - *Vundle*
+  - *PeepOpen* (only applies when in a GUI)
+  - *DroidSansMono*
+    I use a custom version that adds slashes to '0' for disambiguation
+
 ## Installation
 
   1. Clone repo: `git clone git://github.com/kconragan/dotvim.git ~/.vim`
@@ -18,3 +25,5 @@ This is a Vim configuration for a web-development orientated workflow. Specifica
   6. Enjoy
 
 Note to self: set `git remote set-url origin git@github.com:kconragan/dotvim.git` on fresh clone
+
+
