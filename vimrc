@@ -18,14 +18,15 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Github repositories
-Bundle 'vim-scripts/hexHighlight'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+Bundle 'tpope/vim-surround'
+Bundle 'Raimondi/delimitMate'
 
 " vimrc *******************************************************************
 
 map <leader>e :e! ~/.vim/vimrc<cr>             " Fast editing of the vimrc
-autocmd! bufwritepost vimrc source ~/vim/vimrc " Reload vimrc when saved 
+autocmd! bufwritepost vimrc source ~/.vim/vimrc " Reload vimrc when saved 
 
 " Visuals *****************************************************************
 
@@ -152,6 +153,3 @@ func! DeleteTrailingWS()
   exe "normal `z"
 endfunc
 autocmd BufWrite *.py :call DeleteTrailingWS() " Call on save
-
-
-

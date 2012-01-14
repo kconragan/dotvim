@@ -12,3 +12,5 @@ a .vim configuration by kai.conragan@gmail.com
   6. Type `:BundleInstall`
   7. Re-source your vimrc by typing: `: source ~/.vimrc`
   6. Enjoy
+
+Note to self: set `git remote set-url origin git@github.com:kconragan/dotvim.git` on fresh clone
