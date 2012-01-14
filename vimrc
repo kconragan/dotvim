@@ -19,6 +19,7 @@ Bundle 'gmarik/vundle'
 
 " Github repositories
 Bundle 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/nerdtree'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'tpope/vim-surround'
 Bundle 'Raimondi/delimitMate'
@@ -26,6 +27,12 @@ Bundle 'itspriddle/vim-jquery'
 Bundle 'pangloss/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'plasticboy/vim-markdown'
+Bundle 'leshill/vim-json'
+Bundle 'ervandew/supertab'
+" Bundle 'MarcWeber/vim-addon-mw-utils'
+" Bundle 'tomtom/tlib_vim'
+" Bundle 'garbas/vim-snipmate'
+" Bundle 'vim-scripts/snipmate-snippets'
 
 " vimrc *******************************************************************
 

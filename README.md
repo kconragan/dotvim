@@ -30,5 +30,3 @@ This configuration relies on a few critical pieces:
   6. Enjoy
 
 Note to self: set `git remote set-url origin git@github.com:kconragan/dotvim.git` on fresh clone
-
-
