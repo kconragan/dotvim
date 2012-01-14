@@ -36,3 +36,6 @@ Note to self: set `git remote set-url origin git@github.com:kconragan/dotvim.git
   - Add colorscheme
   - Figure out how to make Supertab play nicely with snipMate
   - Autocompletion (beyond Supertab)
+  - Explore vim-easymotion
+  - Explore vim-fugitive
+  - Explore neocomplcache
