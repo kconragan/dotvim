@@ -30,3 +30,9 @@ This configuration relies on a few critical pieces:
   6. Enjoy
 
 Note to self: set `git remote set-url origin git@github.com:kconragan/dotvim.git` on fresh clone
+
+## Todo
+
+  - Add colorscheme
+  - Figure out how to make Supertab play nicely with snipMate
+  - Autocompletion (beyond Supertab)
