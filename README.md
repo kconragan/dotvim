@@ -2,6 +2,10 @@
 
 a .vim configuration by kai.conragan@gmail.com
 
+## Overview
+
+This is a Vim configuration for a web-development orientated workflow. Specifically, if you spend most of your time writing HTML, CSS, and JavaScript, you might be able to find something useful here.
+
 ## Installation
 
   1. Clone repo: `git clone git://github.com/kconragan/dotvim.git ~/.vim`

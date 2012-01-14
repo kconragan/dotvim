@@ -22,6 +22,10 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'tpope/vim-surround'
 Bundle 'Raimondi/delimitMate'
+Bundle 'itspriddle/vim-jquery'
+Bundle 'pangloss/vim-javascript'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'plasticboy/vim-markdown'
 
 " vimrc *******************************************************************
 
@@ -54,6 +58,10 @@ set visualbell " Turn off audible bell
 syntax on          " Enable syntax highlighting
 filetype plugin on " Load plugins based on filetype
 filetype indent on " Follow filetype indent rules
+
+ "Set softwrap for text files"
+autocmd FileType text setlocal wrap linebreak textwidth=0
+autocmd FileType markdown setlocal wrap linebreak textwidth=0
 
 " Highlight unwanted characters
 set listchars=tab:>-,trail:·,eol:$ 
@@ -127,6 +135,7 @@ set nolist
 set backspace=indent,eol,start " Intuitive backspacing in insert mode
 
 " Custom Filetypes *******************************************************
+au BufRead,BufNewFile *.md setfiletype markdown
 au BufRead,BufNewFile *.less setfiletype css
 au BufRead,BufNewFile *.mjt setfiletype html
 au BufRead,BufNewFile *.page setfiletype html
