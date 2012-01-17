@@ -38,3 +38,8 @@ Note to self: set `git remote set-url origin git@github.com:kconragan/dotvim.git
 
   - Explore vim-easymotion
   - Explore vim-fugitive
+  - Explore ack
+  - Explore repeat
+  - Explore lusty
+  - Explore htmlinsert
+  - Explore tabular
