@@ -29,10 +29,15 @@ This configuration relies on a few critical pieces:
   4. Install Vundle: `git clone http://github.com/gmarik/vundle.git bundle/vundle`
   5. Launch Vim
   6. Type `:BundleInstall`
-  7. Re-source your vimrc by typing: `: source ~/.vimrc`
-  6. Enjoy
+  7. 
+  8. Restart Vim (best) *or* re-source your vimrc by typing: `: source ~/.vimrc` if you're in a hurry
+  9. Enjoy
 
 Note to self: set `git remote set-url origin git@github.com:kconragan/dotvim.git` on fresh clone
+
+## Know Bugs
+
+  - When installing a new Bundle via Vundle (:BundleInstall), snipMate stops responding upon completion until restarting Vim.
 
 ## Todo
 

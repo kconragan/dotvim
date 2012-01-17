@@ -37,6 +37,8 @@ Bundle 'vim-scripts/snipmate-snippets'
 Bundle 'garbas/vim-snipmate'
 Bundle 'sjl/gundo.vim'
 Bundle 'docunext/closetag.vim'
+Bundle 'skammer/vim-css-color'
+Bundle 'vim-scripts/Better-CSS-Syntax-for-Vim'
 
 " vimrc *******************************************************************
 
