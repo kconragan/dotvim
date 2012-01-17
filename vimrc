@@ -30,10 +30,11 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'leshill/vim-json'
 Bundle 'ervandew/supertab'
-" Bundle 'MarcWeber/vim-addon-mw-utils'
-" Bundle 'tomtom/tlib_vim'
-" Bundle 'garbas/vim-snipmate'
-" Bundle 'vim-scripts/snipmate-snippets'
+Bundle 'Shougo/neocomplcache'
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
+Bundle 'vim-scripts/snipmate-snippets'
+Bundle 'garbas/vim-snipmate'
 
 " vimrc *******************************************************************
 
@@ -166,6 +167,8 @@ autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+
+let g:SuperTabDefaultCompletionType = "context"
 
 " Custom Functions *******************************************************
 
