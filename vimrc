@@ -1,6 +1,6 @@
 "
 " a .vimrc by Kai Conragan (kai.conragan@gmail.com) 
-"   
+"
 
 " Break out of vi-compatible mode 
 set nocompatible
@@ -39,6 +39,7 @@ Bundle 'sjl/gundo.vim'
 Bundle 'docunext/closetag.vim'
 Bundle 'skammer/vim-css-color'
 Bundle 'vim-scripts/Better-CSS-Syntax-for-Vim'
+Bundle 'Lokaltog/vim-easymotion'
 
 " vimrc *******************************************************************
 
