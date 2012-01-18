@@ -27,7 +27,7 @@ This configuration relies on a few critical pieces:
   2. Create a symlink to ~/.vimrc: `ln -s ~/.vim/vimrc ~/.vimrc`
   3. Go to your .vim directory: `cd ~/.vim/`
   4. Install Vundle: `git clone http://github.com/gmarik/vundle.git bundle/vundle`
-  5. Download and install [DroidSansMono](http://cosmix.org/software)
+  5. Download and install [DroidSansMonoSlashed](http://cosmix.org/software)
   6. Launch Vim
   7. Type `:BundleInstall`
   8. Grab a cup of coffee, it should take 2-3 minutes depending on your network connection
@@ -38,7 +38,7 @@ Note to self: set `git remote set-url origin git@github.com:kconragan/dotvim.git
 
 ## Know Bugs
 
-  - When installing a new Bundle via Vundle (:BundleInstall), snipMate stops responding upon completion until restarting Vim.
+  - When installing a new Bundle via Vundle (`:BundleInstall`), snipMate stops responding upon completion until restarting Vim.
 
 ## Todo
 
