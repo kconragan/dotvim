@@ -28,11 +28,12 @@ This configuration relies on a few critical pieces:
   3. Go to your .vim directory: `cd ~/.vim/`
   4. Install Vundle: `git clone http://github.com/gmarik/vundle.git bundle/vundle`
   5. Download and install [DroidSansMonoSlashed](http://cosmix.org/software)
-  6. Launch Vim
-  7. Type `:BundleInstall`
-  8. Grab a cup of coffee, it should take 2-3 minutes depending on your network connection
-  9. Restart Vim (best), *or* re-source your vimrc by typing: `: source ~/.vimrc` (if you're in a hurry)
-  10. Enjoy
+  6. Download and install [PeepOpen](http://peepcode.com/products/peepopen) *Note: this is optional and only if you're on a Mac with Snow Leopard or higher. This configuration works just fine without PeepOpen.*
+  7. Launch Vim
+  8. Type `:BundleInstall`
+  9. Grab a cup of coffee, it should take 2-3 minutes depending on your network connection
+  10. Restart Vim (best), *or* re-source your vimrc by typing: `: source ~/.vimrc` (if you're in a hurry)
+  11. Enjoy
 
 Note to self: set `git remote set-url origin git@github.com:kconragan/dotvim.git` on fresh clone
 
@@ -47,3 +48,4 @@ Note to self: set `git remote set-url origin git@github.com:kconragan/dotvim.git
   - Explore repeat
   - Explore lusty
   - Explore tabular
+  - Explore Lokaltog/vim-powerline

@@ -1,12 +1,15 @@
 "
 " a .vimrc by Kai Conragan (kai.conragan@gmail.com) 
 "
+"
 
 " Break out of vi-compatible mode 
 set nocompatible
 
 " Map Leader
 let mapleader = ","
+
+map <unique> <silent> <leader>g <Plug>PeepOpen<cr>
 
 " Vundle Settings *********************************************************
 
@@ -40,6 +43,7 @@ Bundle 'docunext/closetag.vim'
 Bundle 'skammer/vim-css-color'
 Bundle 'vim-scripts/Better-CSS-Syntax-for-Vim'
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'topfunky/PeepOpen-EditorSupport', {'rtp': 'vim-peepopen'}
 
 " vimrc *******************************************************************
 
