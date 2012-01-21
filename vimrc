@@ -9,7 +9,9 @@ set nocompatible
 " Map Leader
 let mapleader = ","
 
-map <unique> <silent> <leader>g <Plug>PeepOpen<cr>
+if has("gui_mac")
+  map <silent> <leader>t <Plug>PeepOpen
+endif
 
 " Vundle Settings *********************************************************
 
@@ -44,6 +46,7 @@ Bundle 'skammer/vim-css-color'
 Bundle 'vim-scripts/Better-CSS-Syntax-for-Vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'topfunky/PeepOpen-EditorSupport', {'rtp': 'vim-peepopen'}
+Bundle 'Lokaltog/vim-powerline'
 
 " vimrc *******************************************************************
 
@@ -123,7 +126,7 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR> " Clear searches with the sp
 noremap <F4> :set hlsearch! hlsearch?<CR> " Toggle search highlighting (but don't clear)
 
 " Status Line ************************************************************
-set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [LINE=%04l/%L]\ [COL=%04v]\ [%p%%]
+"set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [LINE=%04l/%L]\ [COL=%04v]\ [%p%%]
 set laststatus=2
 
 " Shorcuts ***************************************************************
