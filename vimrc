@@ -9,6 +9,7 @@ set nocompatible
 " Map Leader
 let mapleader = ","
 
+" Only use <leader>t for triggering PeepOpen when in MacVim
 if has("gui_mac")
   map <silent> <leader>t <Plug>PeepOpen
 endif
@@ -22,10 +23,18 @@ call vundle#rc()
 " Let Vundle manage itself
 Bundle 'gmarik/vundle'
 
-" Github repositories
+" Colors and general environment
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/nerdtree'
+Bundle 'Lokaltog/vim-powerline'
+
+" Motions on steroids
+Bundle 'Lokaltog/vim-easymotion'
+
+" Allow repeat actions to apply to Bundles
+Bundle 'tpope/vim-repeat'
+
+" HTML/CSS/JavaScript love
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'tpope/vim-surround'
 Bundle 'Raimondi/delimitMate'
@@ -34,19 +43,24 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'leshill/vim-json'
+Bundle 'skammer/vim-css-color'
+Bundle 'docunext/closetag.vim'
+Bundle 'vim-scripts/snipmate-snippets'
+Bundle 'vim-scripts/Better-CSS-Syntax-for-Vim'
+
+" Magic <tab> key
 Bundle 'ervandew/supertab'
+
+" Better autocomplete
 Bundle 'Shougo/neocomplcache'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
-Bundle 'vim-scripts/snipmate-snippets'
 Bundle 'garbas/vim-snipmate'
+
+" Files & Tree Navigation
+Bundle 'scrooloose/nerdtree'
 Bundle 'sjl/gundo.vim'
-Bundle 'docunext/closetag.vim'
-Bundle 'skammer/vim-css-color'
-Bundle 'vim-scripts/Better-CSS-Syntax-for-Vim'
-Bundle 'Lokaltog/vim-easymotion'
 Bundle 'topfunky/PeepOpen-EditorSupport', {'rtp': 'vim-peepopen'}
-Bundle 'Lokaltog/vim-powerline'
 
 " vimrc *******************************************************************
 
@@ -126,7 +140,8 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR> " Clear searches with the sp
 noremap <F4> :set hlsearch! hlsearch?<CR> " Toggle search highlighting (but don't clear)
 
 " Status Line ************************************************************
-"set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [LINE=%04l/%L]\ [COL=%04v]\ [%p%%]
+" Can't use fancy for Powerline until I get DroidSansMonoSlashed patched
+"let g:Powerline_symbols = 'fancy'
 set laststatus=2
 
 " Shorcuts ***************************************************************
